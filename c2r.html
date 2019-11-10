@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cytus 2 Song Randomizer</title>
+    <link href="c2r/c2r.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">  
+    </head>
+  <body>
+    <script src="c2r/c2r.js"></script>
+    <table style="margin-left: auto; margin-right: auto;">
+			<tr>
+				<td><a href="/c2r.html"><strong>Cytus 2 Song Randomizer</strong></a></td>
+				<td><a href="/c2c.html" id="c2c">Cytus 2 Lemon Perfect Calculator</a></td>
+			</tr>
+  	</table>
+
+    <table style="margin-left: auto; margin-right: auto;">
+      <tr>
+        <td id="title" colspan="12"><strong>Cytus 2 Song Randomizer</strong></td>
+      </tr>
+      <tr>
+        <td id="ver" colspan="12">r10 (191109) - Until v2.7 - by PyuDi</td>
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+      <tr>
+        <td colspan="12"></td>
+      </tr>
+      <tr>
+        <td colspan="12"><strong>Input Selection</strong></td>
+      </tr>
+      <tr>
+        <td colspan="12">Default Character</td>
+      </tr>
+      <tr>
+        <td colspan="4"><label><input type='checkbox' onclick="f_paff()" checked />PAFF</label></td>
+        <td colspan="4"><label><input type='checkbox' onclick="f_nekow()" checked />NEKO#ΦωΦ</label></td>
+        <td colspan="4"><label><input type='checkbox' onclick="f_robohead()" checked />ROBO_Head</label></td>
+      </tr>
+      <tr>
+        <td colspan="6"><label><input type='checkbox' onclick="f_ivy()" checked />Ivy</label></td>
+        <td colspan="6"><label><input type='checkbox' onclick="f_crystalpunk()" checked />Crystal Punk</label></td>
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+
+      <tr>
+        <td colspan="12">DLC Character</td>
+      </tr>
+      <tr>
+        <td colspan="4"><label><input type='checkbox' onclick="f_xenon()" checked />Xenon</label></td>
+        <td colspan="4"><label><input type='checkbox' onclick="f_conner()" checked />ConneR</label></td>
+        <td colspan="4"><label><input type='checkbox' onclick="f_cherry()" checked />Cherry</label></td>
+      </tr>
+      <tr>
+        <td colspan="6"><label><input type='checkbox' onclick="f_joe()" checked />Joe</label></td>
+        <td colspan="6"><label><input type='checkbox' onclick="f_miku()" checked />Miku</label></td>
+      </tr>
+      <tr>
+        <td colspan="6"><label><input type='checkbox' disabled="disabled"/>?????</label></td>
+        <td colspan="6"><label><input type='checkbox' disabled="disabled"/>???</label></td>
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+
+      <tr>
+        <td colspan="12">Default Character +</td>
+      </tr>
+      <tr>
+        <td colspan="4"><label><input type='checkbox' onclick="f_aroma()" checked />Aroma</label></td>
+        <td colspan="4"><label><input type='checkbox' onclick="f_nora()" checked />Nora</label></td>
+        <td colspan="4"><label><input type='checkbox' onclick="f_neko()" checked />Neko</label></td>
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+      <tr>
+        <td colspan="12"><label><input type='checkbox' onclick="f_black()" checked />Black Market</label></td>
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+      <tr>
+        <td colspan="12"></td>
+      </tr>
+      <tr>
+        <td colspan="12"><strong>Chaos Level Selection</strong></td>
+      </tr>
+      <tr>
+        <td colspan="3"><label><input type='checkbox' onclick="f_8()" checked />8</label></td>
+        <td colspan="3"><label><input type='checkbox' onclick="f_9()" checked />9</label></td>
+        <td colspan="3"><label><input type='checkbox' onclick="f_10()" checked />10</label></td>
+        <td colspan="3"><label><input type='checkbox' onclick="f_11()" checked />11</label></td>
+      </tr>
+      <tr>
+        <td colspan="3"><label><input type='checkbox' onclick="f_12()" checked />12</label></td>
+        <td colspan="3"><label><input type='checkbox' onclick="f_13()" checked />13</label></td>
+        <td colspan="3"><label><input type='checkbox' onclick="f_14()" checked />14</label></td>
+        <td colspan="3"><label><input type='checkbox' onclick="f_15()" checked />15</label></td>
+      </tr>
+			<tr>
+				<td colspan="12"><label><input type='checkbox' onclick="f_fire()" checked />SIX 🔥 ?</label></td>
+			</tr>
+
+      <tr>
+        <td colspan="12">
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+      <tr>
+        <td colspan="12"><button onclick="randomize()" onkeydown="JavaScript:Enter_Check();">RANDOMIZE</button></td>
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+      <tr>
+        <td id="output" colspan="12"><strong>GLITCH 15</strong></td>
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+      <tr>
+        <td colspan="12">
+      </tr>
+      <tr>
+        <td colspan="12"><button id="copy" onclick="copy()">Copy to Clipboard!</button></td>
+      </tr>
+    </table>
+    <br>
+    <details>
+      <summary>Contact</summary>
+      <p id="log">
+        PyuDi _퓨디#7059 @ discord
+      </p>
+    </details>
+    <details>
+      <summary>Update log</summary>
+      <p id="log">
+        r10 (191109): 2.7 new songs added! <br>
+        r9.1 (191102): songs selectable by chaos level! <br>
+				r9 (191102): songs selectable by chaos level! (14-15 only) <br>
+        r8 (190925): url changed <br>
+        r7.1 (190921): now skips 'undefined' output <br>
+        r7 (190920): 2.6 new songs added! <br>
+        r6 (190915): changed bg·text color / new font: <a href="https://fonts.google.com/specimen/Nunito">Nunito</a> / added 'Copied to Clipboard!' <br>
+        r5 (190913): increased bm filter accuracy / something added <br>
+        r4 (190913): contact links added <br>
+        r3 (190913): can copy to clipboard <br>
+        r2 (190913): black market filter added <br>
+        r1 (190913): released <br>
+      </p>
+    </details>
+    <details>
+      <summary>Todo</summary>
+      <p id="log">
+        <label><input type='checkbox' onclick="f_debug()">debug</label> <br>
+        1. skip already outputted outputs <br>
+        2. add a method to check/uncheck each character groups <br>
+      </p>
+    </details>
+  </body>
+</html>

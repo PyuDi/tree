@@ -1,0 +1,44 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+#title {
+  font-size: 20px;
+}
+.tree{
+  color:#393939;
+}
+.tree, .tree ul{
+  list-style: none;
+  padding-left:17px;
+}
+.tree *:before{
+  width:17px;
+  height:17px;
+  display:inline-block;
+}
+.tree label{
+  cursor: pointer;
+}
+.tree label:before{
+  content:'\f256';
+  font-family: fontello;
+}
+.tree a{
+  text-decoration: none;
+  color:#393939;
+}
+.tree a:before{
+  content:'\e800';
+  font-family: fontello;
+}
+.tree input[type="checkbox"] {
+  display: none;
+}
+.tree input[type="checkbox"]:checked~ul {
+  display: none;
+}
+.tree input[type="checkbox"]:checked+label:before{
+  content:'\f255';
+  font-family: fontello;
+}

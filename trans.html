@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ZETA Translator</title>
+    <link href="trans/trans.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="trans/trans.js"></script>
+    <table style="margin-left: auto; margin-right: auto;">
+      <tr>
+        <td class="title">ZETA Translator<br>ζ 𝟩▷Λ├Ͷ∟Λ𝟩Ο▷</td>
+      </tr>
+      <tr>
+        <td>
+          <select class="select">
+            <option name="z2d">English → ζ</option>
+            <option name="z2d_r" selected="selected">English → ζ (remove blanks)</option>
+            <option name="d2z_c">ζ → English (Capitalized)</option>
+            <option name="d2z_c">ζ → English</option> 
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><textarea id="input" name="input"></textarea></td>
+      </tr>
+      <tr>
+        <td><button onclick="trans()">TRANSLATE</button></td>
+      </tr>
+      <tr>
+        <td><textarea id="output" name="output"></textarea></td>
+      </tr>
+      <tr>
+        <td><button id="copy" onclick="copy()">Copy to Clipboard!</button></td>
+      </tr>
+    </table>
+    <details>
+      <summary>Update log</summary>
+      <p id="log">
+        r4 (191002): name changed <br>
+        r3 (190925): url changed <br>
+        r2 (190920): added various translation <br>
+        r1 (190919): released <br>
+      </p>
+    </details>
+  </body>
+</html>

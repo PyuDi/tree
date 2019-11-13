@@ -1,0 +1,20 @@
+* {
+  color: #ccc481;
+}
+tr, td {
+  border: 1px solid #ccc481;
+}
+input {
+	background-color: transparent;
+}
+.res {
+  font-size: 60%;
+}
+input {
+  width: 40%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

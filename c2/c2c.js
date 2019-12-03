@@ -14,6 +14,8 @@ function calc() {
 
 	if (res==1) {
 		document.getElementById("res").innerHTML = "There were ONLY " + res + " Lemon Perfect :| <br> You can do it :)";
+	} if (res<0) {
+		document.getElementById("res").innerHTML = "Are you SURE?";
 	} else {
 		document.getElementById("res").innerHTML = "There were " + res + " Lemon Perfects :|";
 	}

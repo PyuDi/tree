@@ -97,7 +97,7 @@ function f_cherry() {
     window.s_cherry = 1;
   }
 }
-var joe = [ ' [Joe] Childish ', ' [Joe] Trunstile Jumper ', ' [Joe] Juicy Gossip ', ' [Joe] Standby for Action ', ' [Joe] Open the Game ', ' [Joe] Hydrangea ', ' [Joe] Absolutely ', ' [Joe] Higher and Higher ', ' [Joe] Take me to the Future ', ' [Joe] Nautilus ' ];
+var joe = [ ' [Joe] Childish ', ' [Joe] Turnstile Jumper ', ' [Joe] Juicy Gossip ', ' [Joe] Standby for Action ', ' [Joe] Open the Game ', ' [Joe] Hydrangea ', ' [Joe] Absolutely ', ' [Joe] Higher and Higher ', ' [Joe] Take me to the Future ', ' [Joe] Nautilus ' ];
 function f_joe() {
   if(s_joe==1) {
     window.s_joe = 0;

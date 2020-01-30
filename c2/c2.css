@@ -48,16 +48,6 @@ button {
 
 
 details {
-  font-size: 70%;
-}
-summary {
+  font-size: 90%;
   text-align: left;
-  font-size: 70%;
-}
-#log {
-  text-align: left;
-  font-size: 70%;
-}
-#ver {
-  font-size: 70%;
 }

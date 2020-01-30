@@ -316,8 +316,8 @@ function randomize() {
   if (s_black==0) {
     final = final.filter(x => !black.includes(x));
   }
-  if (s_g==0) {
-    final = final.filter(x => !g.includes(x));
+  if (s_capso==0) {
+    final = final.filter(x => !capso.includes(x));
   }
 
   // begin filtering levels

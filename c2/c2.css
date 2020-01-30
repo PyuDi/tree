@@ -49,5 +49,10 @@ button {
 
 details {
   font-size: 90%;
+}
+summary {
   text-align: left;
+}
+#more {
+	text-align: left;
 }

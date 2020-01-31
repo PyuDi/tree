@@ -1,0 +1,11 @@
+* {
+  color: #cccccc;
+}
+
+tr, td {
+  border: 1px solid #cccccc;
+}
+table {
+	font-size: 110%;
+	width: 70vw;
+}

@@ -7,6 +7,9 @@ body {
 	background-color: #222;
 }
 
+#cth {
+	color: #cccccc;
+}
 #c2r {
   color: #81ccc4;
 }
@@ -20,7 +23,7 @@ body {
   font-size: 150%;
 }
 table {
-  width: 100%;
+  //width: 30vw;
   border-collapse: separate;
   border-spacing: 0;
 }

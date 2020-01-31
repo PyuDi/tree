@@ -5,3 +5,6 @@
 tr, td {
   border: 1px solid #81ccc4;
 }
+#fire {
+	text-decoration: line-through;
+}

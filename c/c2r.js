@@ -101,7 +101,7 @@ function f_cherry() {
     window.s_cherry = 1;
   }
 }
-var joe = [ ' [Joe] Childish ', ' [Joe] Turnstile Jumper ', ' [Joe] Juicy Gossip ', ' [Joe] Standby for Action ', ' [Joe] Open the Game ', ' [Joe] Hydrangea ', ' [Joe] Absolutely ', ' [Joe] Higher and Higher ', ' [Joe] Take me to the Future ', ' [Joe] Nautilus ' ];
+var joe = [ ' [Joe] Childish ', ' [Joe] Turnstile Jumper ', ' [Joe] Juicy Gossip ', ' [Joe] Standby for Action ', ' [Joe] Open the Game ', ' [Joe] Hydrangea ', ' [Joe] Absolutely ', ' [Joe] Higher and Higher ', ' [Joe] Take me to the Future ', ' [Joe] Nautilus ', ' [Joe] Bass Music ' ];
 function f_joe() {
   if(s_joe==1) {
     window.s_joe = 0;
@@ -125,7 +125,7 @@ function f_rin() {
     window.s_rin = 1;
   }
 }
-var aroma = [ ' [Aroma] Bass Music ', ' [Aroma] change ', ' [Aroma] No One Can`t Stop Me ', ' [Aroma] Spotlight On ', ' [Aroma] Bring the light ', ' [Aroma] Make U Mine ', ' [Aroma] Anzen Na Kusuri ', ' [Aroma] 漂流 ', ' [Aroma] Perspectives ', ' [Aroma] 風の声 ', ' [Aroma] Neon Escape ' ];
+var aroma = [ ' [Aroma] change ', ' [Aroma] No One Can`t Stop Me ', ' [Aroma] Spotlight On ', ' [Aroma] Bring the light ', ' [Aroma] Make U Mine ', ' [Aroma] Anzen Na Kusuri ', ' [Aroma] 漂流 ', ' [Aroma] Perspectives ', ' [Aroma] 風の声 ', ' [Aroma] Neon Escape ' ];
 function f_aroma() {
   if(s_aroma==1) {
     window.s_aroma = 0;
@@ -256,7 +256,9 @@ window.final_remain = []; */
 
 
 function randomize() {
+  var final_ = [];
   var final = [];
+
   var final_8 = [];
   var final_9 = [];
   var final_10 = [];
@@ -333,7 +335,7 @@ function randomize() {
     final_9 = final.filter(x => ix.includes(x));
   }
   if (s_10==1) {
-    final_10 = final.filter(x => x.includes(x));
+    final_10 = final.filter(y => x.includes(y));
   }
   if (s_11==1) {
     final_11 = final.filter(x => xi.includes(x));
@@ -359,18 +361,18 @@ function randomize() {
 
   var empty = [];
   final = empty.concat(final_8, final_9, final_10, final_11, final_12, final_13, final_14, final_15, final_g); //, final_fire);
+  final_ = Array.from(new Set(final));
+	console.log(final_.join());
 
-
-  var output = Math.floor(Math.random() * final.length) + 2;
-  while (typeof final[output] == 'undefined') {
-    output = Math.floor(Math.random() * final.length) + 2;
+  var output = Math.floor(Math.random() * final_.length) + 2;
+  while (typeof final_[output] == 'undefined') {
+    output = Math.floor(Math.random() * final_.length) + 2;
   }
-  document.getElementById("output").innerHTML = final[output];
+  document.getElementById("output").innerHTML = final_[output];
 
 
   if (s_debug==1) {
-    alert(final.join());
-    console.log(final.join());
+		alert(final_.join());
   }
 }
 

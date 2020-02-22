@@ -51,7 +51,6 @@ function fight() {
   document.getElementById("fight1").innerHTML = "";
   document.getElementById("fight2").innerHTML = "";
   window.res = "";
-  if (i1<2 || i2<2) { alert("Input integer bigger than 1"); }
 
   while (fb1>0 && fb2>0) {
     i+=1;

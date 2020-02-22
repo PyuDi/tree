@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WordFighter</title>
+    <link href="wf/wf.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">  
+  </head>
+  <body>
+   <script src="wf/wf.js"></script>
+    <table style="margin-left: auto; margin-right: auto;">
+      <tr>
+        <td colspan="3">Number Fighter</td>
+      </tr>
+      <tr>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <td><input id="input1" type="number" name="input1" value="" min="2" onkeydown="JavaScript:Enter_Check();"></input></td>
+        <td><button onclick="calc1(); calc2(); fight();">START!</button></td>
+        <td><input id="input2" type="number" name="input2" value="" min="2" onkeydown="JavaScript:Enter_Check();"></input></td>
+      </tr>
+      <tr>
+        <td><p id="result1" class="res"></p></td>
+        <td></td>
+        <td><p id="result2" class="res"></p></td>
+      </tr>
+      <tr>
+        <td><br>1's Life</td>
+        <td><br>PHASE</td>
+        <td><br>2's Life</td>
+      </tr>
+      <tr>
+        <td><p id="fight1"></p></td>
+        <td><p id="phase">VS</p></td>
+        <td><p id="fight2"></p></td>
+      </tr>
+    </table>
+    <details>
+      <summary>Update log</summary>
+      <p id="log">
+        r7 (190925): font and url changed <br>
+        r6 (190918): title text position changed <br>
+        r5.1 (190829): added update log <br>
+        r5 (190829): ENTER key now usable <br>
+        r4 (190828): url changed <br>
+        r3.1 (190828): VS system with less text on remaining life <br>
+        r3 (190828): VS system
+      </p>
+    </details>
+  </body>
+</html>

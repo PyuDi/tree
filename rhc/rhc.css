@@ -1,0 +1,17 @@
+html {
+	background-color: #333333;
+  font-family: 'Rajdhani', sans-serif;
+	font-size: 4vh; /*180%;*/
+}
+
+tr, td {
+  border: 1px solid #cccccc;
+}
+table {
+	height: 98vh;
+	width: 98vw;
+	text-align: center;
+}
+#white {
+	color: white;
+}

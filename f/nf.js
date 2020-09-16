@@ -14,7 +14,7 @@ function calc1() {
   window.la1 = Math.pow(i1, Math.cos(-i1)) - Math.pow(i1, Math.PI/11);
   window.lb1 = 10 * ( la1 - Math.floor(la1) );
 
-  document.getElementById("result1").innerHTML = "Attack: " + ab1.toFixed(1) + " / Defense: " + db1.toFixed(1) + " / Life: " + fb1.toFixed(1) + " / Luck: " + lb1.toFixed(1);
+  document.getElementById("result1").innerHTML = "Attack: " + ab1.toFixed(2) + " / Defense: " + db1.toFixed(2) + " / Life: " + fb1.toFixed(2) + " / Luck: " + lb1.toFixed(1);
 }
 function calc2() {
   window.i2 = document.getElementById("input2").value;
@@ -32,10 +32,12 @@ function calc2() {
   window.la2 = Math.pow(i2, Math.cos(-i2)) - Math.pow(i2, Math.PI/11);
   window.lb2 = 10 * ( la2 - Math.floor(la2) );
 
-  document.getElementById("result2").innerHTML = "Attack: " + ab2.toFixed(1) + " / Defense: " + db2.toFixed(1) + " / Life: " + fb2.toFixed(1) + " / Luck: " + lb2.toFixed(1);
+  document.getElementById("result2").innerHTML = "Attack: " + ab2.toFixed(2) + " / Defense: " + db2.toFixed(2) + " / Life: " + fb2.toFixed(2) + " / Luck: " + lb2.toFixed(1);
 }
-
-function fight() {
+function timer(ms) {
+	return new Promise(res => setTimeout(res, ms));
+}
+async function fight() {
   var i = 0;
   document.getElementById("phase").innerHTML = "";
   document.getElementById("fight1").innerHTML = "";
@@ -58,8 +60,9 @@ function fight() {
 
     window.fb1 -= h1; //life
     window.fb2 -= h2;
-    fb1 = fb1.toFixed(1);
-    fb2 = fb2.toFixed(1);
+		console.log(h1, h2, fb1, fb2); //debug
+    fb1 = fb1.toFixed(2);
+    fb2 = fb2.toFixed(2);
     if (fb1<0) {fb1=0;}
     if (fb2<0) {fb2=0;}
 
@@ -67,6 +70,13 @@ function fight() {
     document.getElementById("fight1").innerHTML += fb1 + "<br>";
     document.getElementById("fight2").innerHTML += fb2 + "<br>";
 
+		if (i%30==0) {
+			await timer(500);
+			document.getElementById("phase").innerHTML = "";
+  		document.getElementById("fight1").innerHTML = "";
+  		document.getElementById("fight2").innerHTML = "";
+		}
+		await timer(10);
   }
 }
 function Enter_Check(){

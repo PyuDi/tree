@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  	<meta charset="UTF-8">
+  	<title>cl:ock</title>
+		<link rel="stylesheet" href="clock/clock.css"/>
+	</head>
+	<body>
+		<h1>cl⦂ock</h1>
+		<center><table id="table" style="margin-left: auto; margin-right: auto;">
+			<tr> 
+				<td><input type="radio" onClick="f1()" name="type" checked>yyyy-mm-dd hh:mm:ss</input></td>
+				<td><input type="radio" onClick="f11()" name="type">yy-mm-dd hh:mm:ss</input></td>
+				<td><input type="radio" onClick="f12()" name="type">mm-dd-yyyy hh:mm:ss</input></td>
+				<td><input type="radio" onClick="f13()" name="type">mm-dd-yy hh:mm:ss</input></td>
+			</tr>
+			<tr> 
+				<td><input type="radio" onClick="f2()" name="type">hh:mm:ss</input></td>
+				<td><input type="radio" onClick="f21()" name="type">mm:ss</input></td>
+			</tr>
+  	</table></center>
+		
+		<button id="button" onClick="hide()">Hide Selections</button>
+		<h1 class="clock">Loading ...</h1>
+		<script src="clock/clock.js"></script>
+	</body>
+</html>

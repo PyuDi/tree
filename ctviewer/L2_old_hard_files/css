@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://web.archive.org/web/20200113131040im_/https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://web.archive.org/web/20200113131040im_/https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://web.archive.org/web/20200113131040im_/https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 13:10:40 Jan 13, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:23:25 Mar 21, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 1.83
+  esindex: 0.015
+  CDXLines.iter: 123.311 (3)
+  exclusion.robots: 0.145
+  exclusion.robots.policy: 0.134
+  LoadShardBlock: 190.881 (6)
+  PetaboxLoader3.resolve: 23.4
+  PetaboxLoader3.datanode: 132.327 (7)
+  load_resource: 65.847
+*/

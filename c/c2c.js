@@ -13,7 +13,7 @@ function calc() {
 	res = Math.round(res);
 
 	if (res==1) {
-		document.getElementById("res").innerHTML = "There were ONLY " + res + " Lemon Perfect :| <br> You can do it :)";
+		document.getElementById("res").innerHTML = "There were ONLY " + res + " Lemon Perfect :<";
 	} if (res<0) {
 		document.getElementById("res").innerHTML = "Are you SURE?";
 	} else {

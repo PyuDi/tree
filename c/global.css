@@ -19,11 +19,14 @@ body {
 #im {
 	color: #81afcc;
 }
+#ctv {
+	color: #c981cc;
+}
 #title {
   font-size: 150%;
 }
 table {
-  //width: 30vw;
+  /*width: 30vw;*/
   border-collapse: separate;
   border-spacing: 0;
 }
